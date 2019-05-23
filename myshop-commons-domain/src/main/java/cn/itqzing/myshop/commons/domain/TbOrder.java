@@ -3,10 +3,11 @@ package cn.itqzing.myshop.commons.domain;
 import javax.persistence.Column;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import java.io.Serializable;
 import java.util.Date;
 
-@Table(name = "myshop..tb_order")
-public class TbOrder {
+@Table(name = "tb_order")
+public class TbOrder implements Serializable {
     /**
      * 订单id
      */

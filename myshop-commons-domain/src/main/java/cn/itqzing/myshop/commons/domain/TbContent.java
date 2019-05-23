@@ -1,10 +1,11 @@
 package cn.itqzing.myshop.commons.domain;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.Date;
 
-@Table(name = "myshop..tb_content")
-public class TbContent {
+@Table(name = "tb_content")
+public class TbContent implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

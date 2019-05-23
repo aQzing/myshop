@@ -1,9 +1,10 @@
 package cn.itqzing.myshop.commons.domain;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
-@Table(name = "myshop..tb_order_item")
-public class TbOrderItem {
+@Table(name = "tb_order_item")
+public class TbOrderItem implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private String id;

@@ -3,10 +3,11 @@ package cn.itqzing.myshop.commons.domain;
 import javax.persistence.Column;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import java.io.Serializable;
 import java.util.Date;
 
-@Table(name = "myshop..tb_item_desc")
-public class TbItemDesc {
+@Table(name = "tb_item_desc")
+public class TbItemDesc implements Serializable {
     /**
      * 商品ID
      */

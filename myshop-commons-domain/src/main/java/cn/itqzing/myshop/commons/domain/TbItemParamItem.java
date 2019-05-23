@@ -1,10 +1,11 @@
 package cn.itqzing.myshop.commons.domain;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.Date;
 
-@Table(name = "myshop..tb_item_param_item")
-public class TbItemParamItem {
+@Table(name = "tb_item_param_item")
+public class TbItemParamItem implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

@@ -1,10 +1,11 @@
 package cn.itqzing.myshop.commons.domain;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.Date;
 
-@Table(name = "myshop..tb_item")
-public class TbItem {
+@Table(name = "tb_item")
+public class TbItem implements Serializable {
     /**
      * 商品id，同时也是商品编号
      */

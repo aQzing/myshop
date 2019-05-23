@@ -1,10 +1,11 @@
 package cn.itqzing.myshop.commons.domain;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.Date;
 
-@Table(name = "myshop..tb_content_category")
-public class TbContentCategory {
+@Table(name = "tb_content_category")
+public class TbContentCategory implements Serializable {
     /**
      * 类目ID
      */
